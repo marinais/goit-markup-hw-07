@@ -13,41 +13,48 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./CSS/styles.css" />
+
+    <!-- <link rel="stylesheet" href="./CSS/styles.css" /> -->
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./sass/main.min.css" /> -->
   </head>
 
   <body class="page">
-    <header class="page-header">
-      <div class="container main-nav">
+    <header class="header">
+      <div class="container navigation">
         <a href="./index.html" lang="en" class="logo">
           <span class="logo-first-part">Web</span>Studio</a
         >
         <nav>
           <ul class="site-nav">
-            <li class="item">
-              <a href="./index.html" class="link current">Студия</a>
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link link current"
+                >Студия</a
+              >
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link link"
+                >Портфолио</a
+              >
             </li>
-            <li class="item">
-              <a href="" class="link">Контакты</a>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link link">Контакты</a>
             </li>
           </ul>
         </nav>
 
         <ul class="communication">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link-mail">
-              <svg class="header-contacts" width="16" height="12">
+          <li class="communication__item">
+            <a href="mailto:info@devstudio.com" class="communication__link">
+              <svg class="link__img" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link-tel">
-              <svg class="header-contacts" width="10" height="16">
+          <li class="communication__item">
+            <a href="tel:+380961111111" class="communication__link">
+              <svg class="link__img" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -73,7 +80,7 @@
       <section class="section">
         <div class="container">
           <ul class="feature-list">
-            <li class="item">
+            <li class="feature-list__item">
               <div class="feature-container">
                 <a class="feature-image-link" href="">
                   <svg class="feature-image-icon" width="70" height="70">
@@ -81,13 +88,13 @@
                   </svg>
                 </a>
               </div>
-              <h3 class="title">Внимание к деталям</h3>
-              <p class="text">
+              <h3 class="feature-list__title">Внимание к деталям</h3>
+              <p class="feature-list__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="item">
+            <li class="feature-list__item">
               <div class="feature-container">
                 <a class="feature-image-link" href="">
                   <svg class="feature-image-icon" width="70" height="70">
@@ -95,13 +102,13 @@
                   </svg>
                 </a>
               </div>
-              <h3 class="title">Пунктуальность</h3>
-              <p class="text">
+              <h3 class="feature-list__title">Пунктуальность</h3>
+              <p class="feature-list__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="item">
+            <li class="feature-list__item">
               <div class="feature-container">
                 <a class="feature-image-link" href="">
                   <svg class="feature-image-icon" width="70" height="70">
@@ -109,13 +116,13 @@
                   </svg>
                 </a>
               </div>
-              <h3 class="title">Планирование</h3>
-              <p class="text">
+              <h3 class="feature-list__title">Планирование</h3>
+              <p class="feature-list__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="item">
+            <li class="feature-list__item">
               <div class="feature-container">
                 <a class="feature-image-link" href="">
                   <svg class="feature-image-icon" width="70" height="70">
@@ -123,8 +130,8 @@
                   </svg>
                 </a>
               </div>
-              <h3 class="title">Современные технологии</h3>
-              <p class="text">
+              <h3 class="feature-list__title">Современные технологии</h3>
+              <p class="feature-list__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -144,7 +151,7 @@
                 width="370"
                 height="294"
               />
-              <h3 class="item-name">Десктопные приложения</h3>
+              <h3 class="about-list__item-name">Десктопные приложения</h3>
             </li>
             <li class="item">
               <img
@@ -153,7 +160,7 @@
                 width="370"
                 height="294"
               />
-              <h3 class="item-name">Мобильные приложения</h3>
+              <h3 class="about-list__item-name">Мобильные приложения</h3>
             </li>
             <li class="item">
               <img
@@ -162,7 +169,7 @@
                 width="370"
                 height="294"
               />
-              <h3 class="item-name">Дизайнерские решения</h3>
+              <h3 class="about-list__item-name">Дизайнерские решения</h3>
             </li>
           </ul>
         </div>
@@ -172,7 +179,7 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
-            <li class="team-list-card">
+            <li class="team-list__card">
               <img
                 src="./images/team-img-1.jpg"
                 alt="Фото Игорь Демьяненко"
@@ -180,8 +187,8 @@
                 height="260"
               />
               <div class="team-discription">
-                <h3 class="title">Игорь Демьяненко</h3>
-                <p lang="en" class="team-text">Product Designer</p>
+                <h3 class="team-discription__title">Игорь Демьяненко</h3>
+                <p lang="en" class="team-discription__text">Product Designer</p>
                 <div>
                   <ul class="social-list list">
                     <li class="social-list-item">
@@ -216,7 +223,7 @@
                 </div>
               </div>
             </li>
-            <li class="team-list-card">
+            <li class="team-list__card">
               <img
                 src="./images/team-img-2.jpg"
                 alt="Фото Ольга Репина"
@@ -224,8 +231,10 @@
                 height="260"
               />
               <div class="team-discription">
-                <h3 class="title">Ольга Репина</h3>
-                <p lang="en" class="team-text">Frontend Developer</p>
+                <h3 class="team-discription__title">Ольга Репина</h3>
+                <p lang="en" class="team-discription__text">
+                  Frontend Developer
+                </p>
                 <div>
                   <ul class="social-list list">
                     <li class="social-list-item">
@@ -260,7 +269,7 @@
                 </div>
               </div>
             </li>
-            <li class="team-list-card">
+            <li class="team-list__card">
               <img
                 src="./images/team-img-3.jpg"
                 alt="Фото Николай Тарасов"
@@ -268,8 +277,8 @@
                 height="260"
               />
               <div class="team-discription">
-                <h3 class="title">Николай Тарасов</h3>
-                <p lang="en" class="team-text">Marketing</p>
+                <h3 class="team-discription__title">Николай Тарасов</h3>
+                <p lang="en" class="team-discription__text">Marketing</p>
                 <div>
                   <ul class="social-list list">
                     <li class="social-list-item">
@@ -304,7 +313,7 @@
                 </div>
               </div>
             </li>
-            <li class="team-list-card">
+            <li class="team-list__card">
               <img
                 src="./images/team-img-4.jpg"
                 alt="Фото Михаил Ермаков"
@@ -312,8 +321,8 @@
                 height="260"
               />
               <div class="team-discription">
-                <h3 class="title">Михаил Ермаков</h3>
-                <p lang="en" class="team-text">UI Designer</p>
+                <h3 class="team-discription__title">Михаил Ермаков</h3>
+                <p lang="en" class="team-discription__text">UI Designer</p>
                 <div>
                   <ul class="social-list list">
                     <li class="social-list-item">
